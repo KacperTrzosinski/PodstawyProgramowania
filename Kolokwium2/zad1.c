@@ -1,12 +1,17 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
+    
     int liczba;
     int suma_dodatnich = 0;
     int ilosc_dodatnich = 0;
     int ilosc_nieparzystych_ujemnych = 0;
     int ilosc_poprawnych = 0;
-
+    
+    fflush(stdout);
+    system("chcp 65001 >NUL");
+    
     printf("=== Analizator Ciagu Liczbowego ===\n");
     printf("Wprowadzaj liczby z zakresu [-50, 50]. Podaj 0, aby zakonczyc.\n\n");
 
