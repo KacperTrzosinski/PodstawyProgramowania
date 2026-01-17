@@ -13,17 +13,17 @@ int main() {
     system("chcp 65001 >NUL");
     
     printf("=== Analizator Ciagu Liczbowego ===\n");
-    printf("Wprowadzaj liczby z zakresu [-50, 50]. Podaj 0, aby zakonczyc.\n\n");
+    printf("Wprowadzaj liczby z zakresu [-50, 50]. Podaj 0, aby zakończyć.\n\n");
 
     while (1) {
         do {
-            printf("Podaj liczbe: ");
+            printf("Podaj liczbę: ");
             scanf("%d", &liczba);
 
             if (liczba == 0) break;
 
             if (liczba < -50 || liczba > 50) {
-                printf("Blad! Liczba musi byc w przedziale [-50, 50]. Sprobuj ponownie.\n");
+                printf("Bład! Liczba musi byc w przedziale [-50, 50]. Spróbuj ponownie.\n");
             }
         } while (liczba < -50 || liczba > 50);
 
@@ -43,16 +43,16 @@ int main() {
     }
 
     printf("\n--- STATYSTYKI ---\n");
-    printf("Ilosc liczb nieparzystych ujemnych: %d\n", ilosc_nieparzystych_ujemnych);
+    printf("Ilość liczb nieparzystych ujemnych: %d\n", ilosc_nieparzystych_ujemnych);
 
     if (ilosc_dodatnich > 0) {
         double srednia = (double)suma_dodatnich / ilosc_dodatnich;
-        printf("Srednia liczb dodatnich: %.2f\n", srednia);
+        printf("średnia liczb dodatnich: %.2f\n", srednia);
     } else {
-        printf("Srednia liczb dodatnich: brak danych (nie podano liczb dodatnich).\n");
+        printf("średnia liczb dodatnich: brak danych (nie podano liczb dodatnich).\n");
     }
 
-    printf("Wykres ilosci wprowadzonych danych: ");
+    printf("Wykres ilości wprowadzonych danych: ");
     for (int i = 0; i < ilosc_poprawnych; i++) {
         printf("*");
     }
